@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
+/*body html*/
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    
+    background: #202020;
+    height: 100vh;
+}
+
+h2{
+    display: grid;
+    color: white;
+    font-family: "Lexend";
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5%;
+    
+}
+
+/*image*/
+img{
+    z-index: 1;
+}
+
+/*card name*/
+h3{
+    color: #000000;
+    z-index: 1;
+}
+
+/*container*/
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend";
+    flex-direction: row;
+    padding-top: 3%;
+}
+
+/*card animation*/
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*card*/
+.card{
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 250px;
+    width: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*card before*/
+.card::before{
+    content: '';
+    width: 60px;
+    height: 300px;
+    left: 10px;
+    top: -70px;
+    position: absolute;
+    background: linear-gradient(#10A19D, #540375);
+    animation: animate 5s linear infinite;
+}
+
+/*card after*/
+.card::after{
+    content: '';
+    position: absolute;
+    background: #fff;
+    inset: 3px;
+    border-radius: 5px;
+}
+
+/*icons*/
+.icons{
+    font-size: 90px;
+    color: #000000;
+    z-index: 1;
+}
+
+/*footer*/
+footer{   
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;   
+}
+
+@media (max-width: 999px){
+    #container{
+        width: 60%;
+        flex-wrap: wrap;
+        
+        gap: 1%;
+    }
+    .card{
+        margin-top: 10%;
+        
+    }
+    
+}
+
+@media (max-width: 560px) {
+    #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-family: "Lexend";
+        flex-wrap: wrap;
+        padding-top: 3%;
+    }
+    .card{
+        display: grid;
+        place-items: center;
+        position: relative;
+        height: 150px;
+        width: 150px;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    footer{   
+        position: relative;  
+        padding-top: 5%;
+    }
+}
+
+@media (max-width: 499px) {
+    h2{
+        padding-top: 2%;
+        font-size: 25px;
+        
+    }
+    #container{
+        width: 90%;
+        flex-wrap: wrap;        
+    }
+    .card{
+        margin-top: 15%;
+    }
+    footer{   
+        position: relative;  
+        padding-top: 5%;
+    }
+}
+
+@media (max-width: 350px) {
+    h2{
+        font-size: 20px;
+    }
+}

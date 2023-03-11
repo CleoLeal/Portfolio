@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
+/*body html*/
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    
+    background: #202020;
+    height: 100vh;
+}
+
+h2{
+    display: grid;
+    color: white;
+    font-family: "Lexend";
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5%;
+    
+}
+
+h3{
+    width: 500px;
+    height: 170px;
+    font-family: "Lexend";
+    color: white;
+    font-weight: 200;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+#container-about{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+    padding: 0 10% 0 10%;
+}
+
+#container-download{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    font-size: 1.5em;
+}
+
+#btnDownload{
+    font-family: "Lexend";
+    width: 100%;
+    animation: go-back 3s infinite;
+}
+
+/*button animation*/
+@keyframes go-back {
+    0% {
+        transform: translateX(150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*footer*/
+footer{   
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (max-width: 999px){
+    #container-about{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 0;
+        margin-top: 25%;
+        gap: 5%;
+    }
+    h2{
+        padding-top: 5%;
+        font-size: 50px;
+    }
+    h3{
+        width: 400px;
+        height: 170px;
+        font-family: "Lexend";
+        color: white;
+        font-weight: 50;
+        line-height: 50px;
+        
+    }
+    #btnDownload{
+        width: 45%;
+        margin-top: 20%;
+    }
+
+}
+
+@media (max-width: 775px){
+    h3{
+        width: 370px;
+        height: 170px;
+        font-family: "Lexend";
+        color: white;
+        font-weight: 50;
+        line-height: 35px;
+    }
+    #container-about{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin-top: 3%;
+        padding: 0 0 0 0;
+        gap: 2%;
+    }
+    #btnDownload{
+        font-family: "Lexend";
+        width: 100%;
+        animation: go-back 3s infinite;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 560px){
+    h2{
+        font-size: 30px;
+        
+    }
+    #container-about{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer{   
+        position: relative;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 499px){
+    h3{
+        width: 350px;
+        height: 170px;
+        font-family: "Lexend";
+        color: white;
+        font-weight: 50;
+        line-height: 35px;
+        font-size: 20px;
+    }
+    #btnDownload{
+        animation: none;
+    }
+    footer{   
+        padding-top: 5%;
+        
+    }
+}
+
+@media (max-width: 350px){
+    h3{
+        width: 300px;
+        height: 170px;
+        font-family: "Lexend";
+        color: white;
+        font-weight: 200;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    img{
+        width: 80%;
+    }
+}

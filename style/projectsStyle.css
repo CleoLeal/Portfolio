@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
+/*body html*/
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    
+    background: #202020;
+    height: 100vh;
+}
+
+h2{
+    display: grid;
+    color: white;
+    font-family: "Lexend";
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5%;
+    
+}
+
+#container-card{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+.card{
+    padding-top: 2%;
+}
+
+#text{
+    width: 250px;
+    height: 250px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.btn{
+    font-family: "Lexend";
+}
+
+/*footer*/
+footer{   
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+@media (max-width: 999px){
+    h2{
+        
+        padding-top: 5%;
+        
+    }
+    #container-card{
+        margin-top: 20%;
+        gap: 3%;
+    }
+    .text{
+        width: 200px;
+        height: 270px;
+    }
+    footer{   
+            position: fixed;
+            bottom: 0;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+    }
+}
+
+@media (max-width: 560px){
+    #container-card{
+        display: flex;
+        margin-top: 2%;
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 10%;
+    }
+    .text{
+        width: 250px;
+        height: 200px;
+    }
+    footer{   
+        position: relative;
+        
+    }
+}
+
+@media (max-width: 499px){
+    #container-card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    .card{
+        margin-top: 10%;
+    }
+    #text{
+       height: 270px;
+    }
+    footer{
+        padding-top: 10%;
+    }
+}
+
+@media (max-width: 350px){
+    
+}

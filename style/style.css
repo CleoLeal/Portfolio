@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
+/*body html*/
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    
+    background: linear-gradient(45deg, #10A19D, #540375, #FF7000, #FFBF00);
+    height: 100vh;
+    background-size: 200% 100%;
+    animation: colors 5s infinite alternate;
+}
+
+/*body animation*/
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/*animation nav*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 90%;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+ul li a{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-family: "Lexend";
+    font-size: 1.1em;
+    -webkit-text-stroke: 1px rgb(255, 255, 255, 0.5);
+}
+
+ul li a::before{
+    content: attr(data-text);
+    position: absolute;
+    font-size: 1em;
+    color: var(--clr);
+    height: 25px;
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 1px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+ul li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+/*home container*/
+
+#container-home{
+    display: flex;
+    margin-top: 7%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#home{
+    color: #fff;
+    font-family: "Lexend";  
+}
+
+/*footer*/
+footer{   
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*star navigation*/
+.navigation{
+    
+    background: #444444;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: "Lexend";
+    opacity: 90%;
+   
+}
+
+.navigation ul{
+    display: flex;
+    width: 300px;
+}
+
+.navigation ul li{
+    padding: 0;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500px;
+}
+
+.navigation ul li a .icon{
+    display: flex;
+    padding-top: 10px;
+    font-weight: 200px;
+    line-height: 7px;
+    font-size: 2.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: #fff;
+}
+.navigation ul li:hover a .icon{
+    transform: translateY(-32px);
+}
+.navigation ul li a .text{
+    position: absolute;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 20px;
+    letter-spacing: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation ul li:hover a .text{
+    opacity: 1;
+    transform: translateY(10px);
+}
+/*end navigation*/
+
+@media (max-width: 999px){
+    img{
+        display: none;
+    }
+    #container-home{
+        display: flex;
+        margin-top: 50%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer{   
+        position: fixed;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+        
+    }
+    .navigation{
+        margin-top: 80px;
+        background: #444444;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-family: "Lexend";
+        
+    }
+}
+
+@media (max-width: 775px){
+    #container-home{
+        display: flex;
+        margin-top: 50%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer{   
+        position: fixed;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+        
+    }
+    .navigation{
+        margin-top: 80px;
+        background: #444444;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-family: "Lexend";
+        
+    }
+}
+
+@media (max-width: 560px){
+    #container-home{
+        display: flex;
+        margin-top: 40%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer{   
+        position: fixed;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+        
+    }
+    .navigation{
+        margin-top: 80px;
+        background: #444444;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-family: "Lexend";
+        
+    }
+}
+
+@media (max-width: 499px){
+    footer{   
+        position: fixed;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+        
+    }
+    .navigation{
+        margin-top: 80px;
+        background: #444444;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-family: "Lexend";
+        
+    }
+    #container-home{
+    display: flex;
+    margin-top: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+}
+
+@media (max-width: 350px){
+    footer{   
+        position: fixed;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+        
+    }
+    .navigation{
+        margin-top: 80px;
+        background: #444444;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-family: "Lexend";
+        
+    }
+    #container-home{
+        display: flex;
+        margin-top: 20%;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
