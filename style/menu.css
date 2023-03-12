@@ -98,7 +98,7 @@ ul li a:hover::before{
         gap: 70%;
     }
     ul li a{
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
 

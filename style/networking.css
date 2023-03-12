@@ -84,7 +84,7 @@
 @media (max-width: 499px){
     .navigation{
         width: 80%;
-        padding-left: 10%;
+        padding-left: 13%;
     }
     .navigation ul{
         display: flex;
@@ -111,10 +111,10 @@
         margin-left: 40%;
     }
     .navigation ul{
-        gap:15%;
+        gap:27%;
     }
     .navigation ul li a .text{
-        font-size: 12px;
+        font-size: 10px;
         padding-top: 20px;
     }
 }

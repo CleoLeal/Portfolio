@@ -100,12 +100,11 @@ footer{
         
     }
     #btnDownload{
-        width: 45%;
-        margin-top: 20%;
+        width: 100%;
+        margin-top: 60%;
     }
 
 }
-
 @media (max-width: 775px){
     h3{
         width: 370px;
@@ -127,7 +126,7 @@ footer{
         font-family: "Lexend";
         width: 100%;
         animation: go-back 3s infinite;
-        margin-top: 10%;
+        margin-top: 20%;
     }
 }
 
@@ -169,7 +168,7 @@ footer{
 
 @media (max-width: 350px){
     h3{
-        width: 300px;
+        width: 250px;
         height: 170px;
         font-family: "Lexend";
         color: white;
@@ -179,5 +178,8 @@ footer{
     }
     img{
         width: 80%;
+    }
+    #btnDownload{
+        margin-top: 50%;
     }
 }

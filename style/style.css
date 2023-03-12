@@ -276,7 +276,10 @@ footer{
     margin-top: 50%;
     justify-content: space-around;
     align-items: center;
-}
+    }
+    ul li a{
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 350px){
