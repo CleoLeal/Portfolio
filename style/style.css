@@ -278,7 +278,7 @@ footer{
     align-items: center;
     }
     ul li a{
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 }
 
@@ -308,5 +308,12 @@ footer{
         margin-top: 20%;
         justify-content: space-around;
         align-items: center;
+    }
+    ul li a{
+        font-size: 0.67em;
+        -webkit-text-stroke: 1px rgb(255, 255, 255, 0.5);
+    }
+    ul li a::before{
+        height: 20px;
     }
 }
