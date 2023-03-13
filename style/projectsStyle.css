@@ -35,7 +35,7 @@ h2{
 
 #text{
     width: 250px;
-    height: 250px;
+    height: 300px;
     font-weight: 400;
     font-size: 15px;
     line-height: 23px;
@@ -107,7 +107,7 @@ footer{
         margin-top: 10%;
     }
     #text{
-       height: 270px;
+       height: 300px;
     }
     footer{
         padding-top: 10%;
