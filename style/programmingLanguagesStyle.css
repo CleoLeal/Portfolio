@@ -44,6 +44,11 @@ h3{
     padding-top: 3%;
 }
 
+#linguagem{
+    font-size: 10px; 
+    text-align: center;
+}
+
 /*card animation*/
 @keyframes animate{
     0%{
@@ -94,6 +99,8 @@ h3{
     z-index: 1;
 }
 
+
+
 /*footer*/
 footer{   
     position: fixed;
@@ -113,7 +120,9 @@ footer{
         margin-top: 10%;
         
     }
-    
+    #linguagem{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -140,6 +149,12 @@ footer{
         position: relative;  
         padding-top: 5%;
     }
+    h3{
+        font-size: 20px;
+    }
+    #linguagem{
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 499px) {
@@ -153,11 +168,20 @@ footer{
         flex-wrap: wrap;        
     }
     .card{
-        margin-top: 15%;
+        margin-top: 5%;
+        padding-top: 0;
     }
     footer{   
         position: relative;  
         padding-top: 5%;
+    }
+    h3{
+        color: #000000;
+        z-index: 1;
+        font-size: 25px;
+    }
+    #linguagem{
+        font-size: 12px;
     }
 }
 
