@@ -1,0 +1,49 @@
+.container-networking{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.icon-networking{
+    padding-top: 50%;
+    display: flex;
+    width: 50px;
+    margin-top: 1%;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+}
+.icon-networking:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+@media screen and (max-width: 950px){
+    .icon-networking{
+        width: 80px;
+        padding-top: 60%;
+    }
+}
+@media screen and (max-width: 730px) {
+   .container-networking{
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 5%;  
+   }
+   .icon-networking{
+        padding-top: 70%;
+        width: 40px;
+   }
+}
+@media screen and (max-width: 550px){
+    .icon-networking{
+        width: 50px;
+        padding-top: 100%;
+    }
+    .container-networking{
+        margin-left: 2%;  
+   }
+   .logo{
+    width: 25%;
+    height: 25%;
+   }
+}
