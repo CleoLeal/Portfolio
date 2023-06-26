@@ -74,12 +74,10 @@ body{
 .logo-linguagem{
     width: 100px;
     z-index: 1;
-    display: none;
 }
 .logo-linguagem-c{
     width: 80px;
     z-index: 1;
-    display: none;
 }
 #container-C{
     display: flex;
@@ -103,10 +101,7 @@ body{
 .card:hover .name{
     display: flex;
 }
-.card:hover .logo-linguagem {
-    transition: 10s;
-    display: flex;
-}
+
 @keyframes loading {
 	to {
 		transform: rotate(360deg);
