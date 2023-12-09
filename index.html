@@ -1,61 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/networking.css">
-    <link rel="stylesheet" href="style/home.css">
-    <link rel="shortcut icon" href="img/avatar_img/avatar_home.png" type="image/x-icon">
-    <title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfólio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
 </head>
 <body>
-    <!--Menu-->
-    <header>
-        <nav class="nav-bar">
-            <img class='logo' src="img/avatar_img/logo.png" alt="Logo CL">
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="index.html" class="nav-link"><img class="icon-btn" src="img/icons/casa.png" alt=""><p>Home</p></a></li>
-                    <li class="nav-item"><a href="sobremim.html" class="nav-link"><img class="icon-btn" src="img/icons/menina.png" alt=""><p>Sobre mim</p></a></li>
-                    <li class="nav-item"><a href="projetos.html" class="nav-link"><img class="icon-btn" src="img/icons/gerenciamento-de-projetos.png" alt=""><p>Projetos</p></a></li>
-                    <li class="nav-item"><a href="linguagens.html" class="nav-link"><img class="icon-btn" src="img/icons/codificacao.png" alt=""><p>Linguagens</p></a></li>
-                </ul>
-            </div>
+	<!--------header---->
+	<header>
+		<a href="#" class="logo"><img src="img/logo2.png"></a>
+		<div class="bx bx-menu" id="menu-icon"></div>
 
-            <div class="mobile-menu-icon">
-                <div onclick="menuShow()"><img class="icon" src="img/icons/menu.png" alt=""></div>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="index.html" class="nav-link"><img class="icon-btn" src="img/icons/casa.png" alt=""><p>Home</p></a></li>
-                    <li class="nav-item"><a href="sobremim.html" class="nav-link"><img class="icon-btn" src="img/icons/menina.png" alt=""><p>Sobre mim</p></a></li>
-                    <li class="nav-item"><a href="projetos.html" class="nav-link"><img class="icon-btn" src="img/icons/gerenciamento-de-projetos.png" alt=""><p>Projetos</p></a></li>
-                    <li class="nav-item"><a href="linguagens.html" class="nav-link"><img class="icon-btn" src="img/icons/codificacao.png" alt=""><p>Linguagens</p></a></li>
-            </ul>
-        </div>
-    </header>
-    <!--Container-->
-    <div id="container">
-        <div class="container-networking">
-            <div><a href="https://github.com/CleoLeal"target="_blank"><img class="icon-networking" src="img/networking/github.png" alt="Icon GitHub"></a></div>
-            <div><a href="https://www.linkedin.com/in/cleo-l-67b124243/" target="_blank"><img class="icon-networking" src="img/networking/linkedin.png" alt="Icon Linkedin"></a></div>
-            <div><a href="mailton:cleovleal@gmail.com?subject=subject text" target="_blank"><img class="icon-networking" src="img/networking/gmail.png" alt="icon Gmail"></a></div>
-            <div><a href="https://wa.me/11980306030" target="_blank"><img class="icon-networking"src="img/networking/whatsapp.png" alt="Icon WhatsApp"></a></div>
-        </div>
-        <div id="container-text-avatar">
-            <div id="container-text-button">
-                <h2>Seja bem-vindo(a)<br>ao meu Portofólio.</h2>
-                <a href="img/Curriculo - Cleo Victtor Leal.pdf" download="Curriculo - Cleo Victtor Leal.pdf"><button><p>Download</p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 268l144 144 144-144M256 392V100"/></svg></button></a>
-            </div>
-            <img class='avatar-home' src="img/avatar_img/avatar_home.png" alt="Avatar Cléo">
-        </div>
-    </div>
+		<ul class="navlist">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">Sobre</a></li>
+			<li><a href="#tecnologias">Tecnologias</a></li>
+			<li><a href="#portfolio">Projetos</a></li>
+			
+		</ul>
+		<a href="cv.pdf" download="cv.pdf" class="top-btn">Download CV</a>
+	</header>
+
+	<!--------home---->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h3>Olá! seja-bem vindo(a) ao meu</h3>
+			<h1>Portfólio</h1>
+			<h5>Eu sou uma iniciante em<span> programação</span></h5>
+			<p>Estou estudando e colocando em prática os meus conhecimentos em projetos desafiadores</p>
+			<div class="social">
+				<a href="https://github.com/CleoLeal" target="_blank"><i class='bx bxl-github'></i></a>
+				<a href="https://www.linkedin.com/in/cl%C3%A9o-l-67b124243/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+				<a href="https://api.whatsapp.com/send/?phone=11980306030&text&type=phone_number&app_absent=0" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+			</div>
+			<a href="#about" class="btn">Sobre mim</a>
+		</div>
+
+		<div class="home-img">
+			<img src="img/avatar_home.png">
+		</div>
+	</section>
+
+	<!--------About---->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/programacao.png">
+		</div>
+
+		<div class="about-text">
+			<h3>Eu sou uma desenvolvedora</h3>
+			<h2>Posso desenvolver aquilo que você precisa</h2>
+			<p>Olá! Eu sou a Cléo, uma desenvolvedora iniciante. Tenho uma grande paixão por programação, por isso estou sempre estudando as novidades dessa área. Eu sou formada em Desenvolvimento de Sistemas na Etec Albert Einstein, e neste momento eu estou cursando a faculdade de Engenharia de Computação na FIAP.</p>
+			<a href="https://api.whatsapp.com/send/?phone=11980306030&text&type=phone_number&app_absent=0"  target="_blank" class="btn">Contate-me</a>
+		</div>
+	</section>
+
+	<!--------Tecnologias---->
+	<section class="sub-service" id="tecnologias">
+		<div class="heading">
+			<h3>Tecnologias</h3>
+			<h2>Linguagens</h2>
+			<p>Essas são as linguagens que eu tenho conhecimento.</p>
+		</div>
+		<div class="items">
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/logo-python.svg">
+				</div>
+				<h3>Python</h3>
+				<p>Linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.</p>
+			</div>
+
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/icons8-c-afiado-logotipo.svg">
+				</div>
+				<h3>C#</h3>
+				<p>Linguagem de programação, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.</p>
+			</div>
+
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/icons8-js.svg">
+				</div>
+				<h3>JavaScript</h3>
+				<p>Linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
+			</div>
+
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/icons8-c.svg">
+				</div>
+				<h3>C++</h3>
+				<p>Linguagem de programação compilada multi-paradigma e de uso geral.</p>
+			</div>
+
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/icons8-html.svg">
+				</div>
+				<h3>HTML</h3>
+				<p>Linguagem de marcação utilizada na construção de páginas na Web. </p>
+			</div>
+
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/icons8-css.svg">
+				</div>
+				<h3>CSS</h3>
+				<p>Um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML.</p>
+			</div>
+
+		</div>
+	</section>
+
+	<!--------portfolio---->
+	<section class="portfolio" id="portfolio">
+		<div class="heading">
+			<h3>Portfólio</h3>
+			<h2>Meus projetos</h2>
+			<p>Aqui estão alguns projetos desafiadores que eu desenvolvi.</p>
+		</div>
+		<a href="http://toquenarede.epizy.com/toquenarede/quemSomos/" target="_blank">
+			<div class="portfolio-content">
+				<div class="col">
+					<img src="img/project_tnr.png">
+					<div class="layer">
+						<h3>Toque na Rede</h3>
+						<!--<h5>Popup</h5>-->
+					</div>
+			</div>
+		</a>
+		<a href="https://cleoleal.github.io/Habits-Explorer/" target="_blank">
+			<div class="col">
+				<img src="img/project_habits.png">
+				<div class="layer">
+					<h3>Habits</h3>
+					<!--<h5>Popup</h5>-->
+				</div>
+			</div>
+		</a>
+
+		</div>
+	</section>
+
+
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!--------Link to js---->
+	<script type="text/javascript" src="js/script.js"></script>
+	
 </body>
-<!--Script dos icons-->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<!--Link do script-->
-<script src="js/open.js"></script>
 </html>
