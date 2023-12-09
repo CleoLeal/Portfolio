@@ -2,9 +2,6 @@
 
 <p align="center">
 Este é o meu Portfólio
-<p align="center">
-  <img alt="Portfolio Project" src="img/avatar_img/logo.png" width="50%">
-</p>
 </p>
 
 <p align="center">
