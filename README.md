@@ -32,4 +32,3 @@ Se você está curioso, você pode conhece-lo clicando [aqui](https://cleoleal.g
   <img alt="Portfolio Project" src=".github/preview.png" width="100%">
 </p>
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/H4OtNsHWj6pVe3naVMuFFi/Portfolio---Cleo-Leal?type=design&node-id=0%3A1&mode=design&t=EBjeYObWcdFWAEbe-1). Necessita de uma conta no [Figma](https://figma.com) para acessa-lo.
